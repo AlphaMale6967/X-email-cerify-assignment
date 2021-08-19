@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>X Email Verify</title>
+    <style>
+        .right {
+            margin-left: 40%;
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+        }
+
+        .message {
+            border-right: 1px solid black;
+            padding-right: 20px;
+        }
+
+        .notify {
+            padding: 0 10px;
+        }
+
+        .username {
+            padding-left: 40px;
+        }
+
+        .navbar {
+            box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="logo1.png" alt="" style="height: 45px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex">
+                    <input class="form-control" style="margin-left: 20px; border-radius: 0; width: 400px;" type="search"
+                        placeholder="Search for..." aria-label="Search">
+                    <button class="btn" style="border-radius: 0; background-color: blueviolet; color: white;"
+                        type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <div class="right">
+                    <div class="notify"><i class="far fa-bell"></i></div>
+                    <div class="message"><i class="far fa-envelope"></i></div>
+                    <div class="username">valerie Luna <i class="fas fa-user-circle" style="font-size: 30px;"></i></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- sidebar start -->
+    <div class="flex-shrink-0 p-3"
+        style="width: 280px; background-image: linear-gradient(to bottom right, rgb(95, 95, 253), rgb(57, 41, 83));min-height: calc(100vh - 50px); float: left; overflow: hidden; display: table-cell;">
+        <a href="/" class="d-flex pb-3 mb-3 link-dark text-decoration-none border-bottom">
+            <svg class="bi me-2" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class=" fw-semibold" style="color: white; margin-right: 20px;">
+                <h4><i class="fas fa-tachometer-alt"></i> Dashboard</h4>
+            </span>
+        </a>
+        <ul class="list-unstyled text-light ps-0">
+            <li class="mb-1">
+                <button class="btn btn-toggle rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#home-collapse" aria-expanded="true" style="color: white;">
+                    <h4><i class="fas fa-at"></i> Email Verification </h4>
+                </button>
+                <div class="collapse show" id="home-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                        style="font-size: 17px; padding-left: 20px; margin: 5px;">
+                        <li><a href="#" class="link-dark rounded"
+                                style="text-decoration: none; color: rgb(184, 184, 184);"><i
+                                    class="fas fa-user-check"></i> Single Email Verification</a></li>
+                        <li><a href="#" class="link-dark rounded"
+                                style="text-decoration: none; color: rgb(184, 184, 184);"><i
+                                    class="fas fa-envelope-open-text"></i> Bulk Email Verification</a></li>
+                        <li><a href="#" class="link-dark rounded"
+                                style="text-decoration: none; color: rgb(184, 184, 184);"><i
+                                    class="fas fa-file-download"></i> Download Verified Result</a></li>
+                        <li><a href="#" class="link-dark rounded"
+                                style="text-decoration: none; color: rgb(184, 184, 184);"><i class="fas fa-plug"></i>
+                                Email verification API</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1" style="border-top: 1px solid white;">
+                <button class="btn btn-toggle rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#orders-collapse" aria-expanded="false">
+                    <h4 style="color: white;"><i class="fas fa-hand-holding-usd"></i> Integration</h4>
+                </button>
+                <div class="collapse" id="orders-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                        style="font-size: 17px; padding-left: 20px; margin: 5px;">
+                        <li><a href="#" class="link-dark rounded"
+                                style="text-decoration: none; color: rgb(184, 184, 184);"><i class="fas fa-list"></i> My
+                                Apps</a></li>
+                        <li><a href="#" class="link-dark rounded"
+                                style="text-decoration: none; color: rgb(184, 184, 184);"><i
+                                    class="fas fa-file-alt"></i> Email Tools</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="border-top my-3"></li>
+            <li class="mb-1">
+                <button class="btn btn-toggle rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#account-collapse" aria-expanded="false">
+                    <h4 style="color: white;"><i class="fas fa-hand-holding-usd"></i> Billing</h4>
+                </button>
+                <div class="collapse" id="account-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                        style="font-size: 17px; padding-left: 20px; margin: 5px;">
+                        <li><a href="#" class="link-dark rounded"
+                                style="text-decoration: none; color: rgb(184, 184, 184);"><i class="fas fa-list"></i>
+                                Manage Plans</a></li>
+                        <li><a href="#" class="link-dark rounded"
+                                style="text-decoration: none; color: rgb(184, 184, 184);"><i
+                                    class="fas fa-file-alt"></i> Invoices</a></li>
+                        <li><a href="#" class="link-dark rounded"
+                                style="text-decoration: none; color: rgb(184, 184, 184);"><i
+                                    class="fas fa-credit-card"></i> Buy credits</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- sidebar end -->
+    <div>
+        <h2 style="position: relative; padding: 20px; margin-left: 20px; left: 2rem;">
+            Single email verification
+        </h2>
+    </div>
+    <form style="justify-content: center; margin-top: 5%;">
+        <h5 style="margin-left: 45%;">Enter your email id and check the result</h5>
+        <div class="d-flex">
+            <input class="form-control" style="margin-left: 33%; padding: 10px; border-radius: 0; width: 280px;" type="search"
+            placeholder="Enter Email..." aria-label="Search">
+            <button class="btn" style="border-radius: 0; background-color: blueviolet; color: white;"
+            type="submit">Verify</button>
+        </div>
+    </form>
+    <!-- main content start -->
+
+    <main>
+
+    </main>
+    <!-- main content end -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
